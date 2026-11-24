@@ -1,0 +1,32 @@
+body {
+    font-family: Arial;
+    background-color: white;
+    text-align: center;
+}
+form {
+    background-color: white;
+    width: 350px;
+    margin: auto;padding: 25px;
+    border-radius: 10px;
+}
+label {
+    display: block;
+    text-align: left;
+    margin-top: 12px;
+}
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+textarea { height: 90px; }
+button {
+    background-color: #6c5a0f;
+    color: white;
+    padding: 10px;
+    border: none;
+    margin-top: 15px;
+    width: 100%;
+    cursor: pointer;
+}

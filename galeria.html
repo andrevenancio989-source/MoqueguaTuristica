@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería | Moquegua Turística</title>
+    <link rel="stylesheet" href="style3.css">
+    <script src="galeria.js" defer></script>
+</head>
+<body>
+
+<header class="encabezado">
+    <div class="marca">
+        <img src="Imagenes/logoactualizado.png" alt="Logotipo de Mariscal Nieto">
+        <a href="index.html">MOQUEGUA TURÍSTICA</a>
+    </div>
+
+    <nav class="menu">
+        <a href="index.html">Inicio</a>
+        <a href="lugares.html">Lugares</a>
+        <a href="galeria.html" class="activo">Galería</a>
+        <a href="contactos.html">Contactos</a>
+
+    </nav>
+</header>
+    <main class="contenido-principal">
+
+        <section class="introduccion">
+            <h1>Galería turística</h1>
+            <p>
+                Conoce mediante imágenes los paisajes y atractivos
+                turísticos de las tres provincias de Moquegua.
+            </p>
+        </section>
+
+        <section class="filtros">
+            <button class="filtro seleccionado" data-filtro="todos">Todos</button>
+            <button class="filtro" data-filtro="ilo">Ilo</button>
+            <button class="filtro" data-filtro="mariscal">Mariscal Nieto</button>
+            <button class="filtro" data-filtro="sanchez">General Sánchez Cerro</button>
+        </section>
+
+        <p class="contador" id="contador-galeria">Mostrando 9 imágenes</p>
+
+        <section class="tarjetas">
+
+            <!-- MARISCAL NIETO -->
+
+            <article class="tarjeta" data-provincia="mariscal">
+                <img src="Imagenes/cerrobaul.jpg" alt="Cerro Baúl">
+                <div class="informacion">
+                    <span class="provincia">Mariscal Nieto</span>
+                    <h2>Cerro Baúl</h2>
+                    <p>
+                        Formación natural ubicada en Torata, reconocida
+                        por su cima plana y su importancia arqueológica.
+                    </p>
+                </div>
+            </article>
+
+            <article class="tarjeta" data-provincia="mariscal">
+                <img src="Imagenes/cataratasdemollesaja.jpg" alt="Cataratas de Mollesaja">
+                <div class="informacion">
+                    <span class="provincia">Mariscal Nieto</span>
+                    <h2>Cataratas de Mollesaja</h2>
+                    <p>
+                        Atractivo natural de Torata, conocido por sus
+                        caídas de agua y paisajes.
+                    </p>
+                </div>
+            </article>
+
+            <article class="tarjeta" data-provincia="mariscal">
+                <img src="Imagenes/plazadearmasmoquegua.jpg" alt="Plaza de Armas de Moquegua">
+                <div class="informacion">
+                    <span class="provincia">Mariscal Nieto</span>
+                    <h2>Plaza de Armas de Moquegua</h2>
+                    <p>
+                        Espacio emblemático de la ciudad, rodeado de
+                        arquitectura histórica y tradicional.
+                    </p>
+                </div>
+            </article>
+
+            <!-- ILO -->
+
+            <article class="tarjeta" data-provincia="ilo">
+                <img src="Imagenes/maleconcosterodeilo.jpg" alt="Malecón Costero de Ilo">
+                <div class="informacion">
+                    <span class="provincia">Ilo</span>
+                    <h2>Malecón Costero de Ilo</h2>
+                    <p>
+                        Paseo junto al litoral donde se puede disfrutar
+                        del paisaje marino y la brisa del océano.
+                    </p>
+                </div>
+            </article>
+
+            <article class="tarjeta" data-provincia="ilo">
+                <img src="Imagenes/puntacoles.jpg" alt="Punta Coles">
+                <div class="informacion">
+                    <span class="provincia">Ilo</span>
+                    <h2>Punta Coles</h2>
+                    <p>
+                        Área natural costera reconocida por su fauna
+                        marina y sus paisajes junto al océano.
+                    </p>
+                </div>
+            </article>
+
+            <article class="tarjeta" data-provincia="ilo">
+                <img src="Imagenes/playaposodelisas.jpg" alt="Playa Pozo de Lisas">
+                <div class="informacion">
+                    <span class="provincia">Ilo</span>
+                    <h2>Playa Pozo de Lisas</h2>
+                    <p>
+                        Una de las playas conocidas de Ilo, visitada
+                        por sus paisajes y espacios de recreación.
+                    </p>
+                </div>
+            </article>
+
+            <!-- GENERAL SÁNCHEZ CERRO -->
+
+            <article class="tarjeta" data-provincia="sanchez">
+                <img src="Imagenes/valledeomate.jpg" alt="Valle de Omate">
+                <div class="informacion">
+                    <span class="provincia">General Sánchez Cerro</span>
+                    <h2>Valle de Omate</h2>
+                    <p>
+                        Valle conocido por sus paisajes, clima agradable
+                        y producción agrícola.
+                    </p>
+                </div>
+            </article>
+
+            <article class="tarjeta" data-provincia="sanchez">
+                <img src="Imagenes/bañostermalesdecoalaque.jpg" alt="Baños termales de Coalaque">
+                <div class="informacion">
+                    <span class="provincia">General Sánchez Cerro</span>
+                    <h2>Baños termales de Coalaque</h2>
+                    <p>
+                        Aguas termales ubicadas en un entorno natural
+                        de la provincia General Sánchez Cerro.
+                    </p>
+                </div>
+            </article>
+
+            <article class="tarjeta" data-provincia="sanchez">
+                <img src="Imagenes/cataratadelchorro.jpg" alt="Catarata del Chorro">
+                <div class="informacion">
+                    <span class="provincia">General Sánchez Cerro</span>
+                    <h2>Catarata del Chorro</h2>
+                    <p>
+                        Atractivo natural ubicado en el distrito
+                        de Quinistaquillas.
+                    </p>
+                </div>
+            </article>
+
+        </section>
+    </main>
+
+    <footer class="pie-pagina">
+        <p>© 2026 Moquegua Turística | Todos los derechos reservados</p>
+    </footer>
+
+</body>
+</html>

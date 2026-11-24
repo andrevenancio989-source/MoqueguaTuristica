@@ -1,0 +1,189 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f7f4;
+    color: #222;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ENCABEZADO */
+
+.encabezado {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 6%;
+    background: #205b39;
+    min-height: 85px;
+}
+
+.marca {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.marca img {
+    width: 55px;
+    height: 55px;
+    object-fit: contain;
+}
+
+.marca a {
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.menu {
+    display: flex;
+    gap: 12px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-weight: bold;
+    border-radius: 3px;
+}
+
+.menu a:hover,
+.menu a.activo {
+    background: #185437;
+}
+
+/* CONTENIDO */
+
+.contenido-contactos {
+    flex: 1;
+    width: 90%;
+    max-width: 1250px;
+    margin: auto;
+    min-height: 75vh;
+}
+
+/* INTRODUCCIÓN */
+
+.introduccion-contactos {
+    text-align: center;
+    padding: 40px 15px 25px;
+}
+
+.introduccion-contactos h1 {
+    color: #26734d;
+    font-size: 30px;
+    margin-bottom: 12px;
+}
+
+.introduccion-contactos p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* FORMULARIO */
+
+form {
+    background: white;
+    width: 100%;
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 30px;
+    border-radius: 5px;
+}
+
+label {
+    display: block;
+    text-align: left;
+    margin-top: 18px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 7px;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+}
+
+textarea {
+    height: 140px;
+}
+
+button {
+    background-color: #26734d;
+    color: white;
+    padding: 13px;
+    border: none;
+    margin-top: 20px;
+    width: 100%;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #185437;
+}
+
+/* RESPUESTA */
+
+#respuesta {
+    text-align: center;
+    margin: 15px;
+}
+
+/* PIE DE PÁGINA */
+
+.pie-inicio {
+    background: #205b39;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    margin-top: auto;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 600px) {
+
+    .encabezado {
+        flex-direction: column;
+        padding: 12px;
+    }
+
+    .marca img {
+        width: 65px;
+        height: 65px;
+    }
+
+    .marca a {
+        font-size: 18px;
+    }
+
+    .menu {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .introduccion-contactos h1 {
+        font-size: 25px;
+    }
+
+    form {
+        padding: 20px;
+    }
+}

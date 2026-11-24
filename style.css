@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* FONDO DE INICIO */
+
+.pagina-inicio {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    color: white;
+
+    background-image:
+        linear-gradient(rgba(12, 55, 31, 0.62), rgba(12, 55, 31, 0.62)),
+        url("Imagenes/moquegua.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* ENCABEZADO */
+
+
+/* ENCABEZADO */
+
+.encabezado {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 6%;
+    background: #205b39;
+    min-height: 85px;
+}
+
+.marca {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.marca img {
+    width: 55px;
+    height: 55px;
+    object-fit: contain;
+}
+
+.marca a {
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.menu {
+    display: flex;
+    gap: 12px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-weight: bold;
+    border-radius: 3px;
+}
+
+.menu a:hover,
+.menu a.activo {
+    background: #185437;
+}
+
+/* PRESENTACIÓN */
+
+.inicio-contenido {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 70px 20px;
+    text-align: center;
+}
+
+.presentacion {
+    max-width: 780px;
+}
+
+.subtitulo {
+    color: #d2e8bd;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+
+.presentacion h1 {
+    font-size: 50px;
+    margin-bottom: 25px;
+}
+
+.descripcion-inicio {
+    max-width: 700px;
+    margin: auto;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+/* BOTONES */
+
+.botones-inicio {
+    margin-top: 32px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.boton-principal,
+.boton-secundario {
+    display: inline-block;
+    padding: 13px 25px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.boton-principal {
+    background-color: #2e7546;
+    color: white;
+}
+
+.boton-secundario {
+    border: 2px solid white;
+    color: white;
+}
+
+.boton-principal:hover {
+    background-color: #1b4e30;
+}
+
+.boton-secundario:hover {
+    background-color: white;
+    color: #205b39;
+}
+
+/* PIE DE PÁGINA */
+
+.pie-inicio {
+    padding: 20px;
+    text-align: center;
+    background-color: #205b39;
+    color: white;
+    font-size: 14px;
+}
+
+/* CELULARES */
+
+@media (max-width: 650px) {
+    .encabezado {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .marca {
+        justify-content: center;
+    }
+
+    .menu {
+        justify-content: center;
+        gap: 18px;
+    }
+
+    .presentacion h1 {
+        font-size: 35px;
+    }
+
+    .descripcion-inicio {
+        font-size: 16px;
+    }
+}

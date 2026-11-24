@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contáctanos</title>
+    <link rel="stylesheet" href="style5.css">
+</head>
+
+<body>
+
+    <header class="encabezado">
+        <div class="marca">
+            <img src="Imagenes/logoactualizado.png" alt="Logotipo de Mariscal Nieto">
+            <a href="index.html">MOQUEGUA TURÍSTICA</a>
+        </div>
+
+        <nav class="menu">
+            <a href="index.html">Inicio</a>
+            <a href="lugares.html">Lugares</a>
+            <a href="galeria.html">Galería</a>
+            <a href="contactos.html" class="activo">Contactos</a>
+        </nav>
+    </header>
+
+    <main class="contenido-contactos">
+
+        <section class="introduccion-contactos">
+            <h1>Contactos especiales</h1>
+            <p>Completa el siguiente formulario</p>
+        </section>
+
+        <form id="formulario">
+
+            <label>Nombre:</label>
+            <input type="text" id="nombre">
+
+            <label>Correo electrónico:</label>
+            <input type="email" id="correo">
+
+            <label>Mensaje:</label>
+            <textarea id="mensaje"></textarea>
+
+            <button type="submit">Enviar</button>
+
+        </form>
+
+        <p id="respuesta"></p>
+
+    </main>
+
+    <script src="contactos.js"></script>
+
+    <footer class="pie-inicio">
+        <p>© 2026 Moquegua Turística | Conoce y disfruta nuestra región</p>
+    </footer>
+
+</body>
+</html>

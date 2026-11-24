@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lugares turísticos | Moquegua</title>
+    <link rel="stylesheet" href="style2.css">
+    <script src="scrip.js" defer></script>
+</head>
+<body>
+
+ <header class="encabezado">
+    <div class="marca">
+        <img src="Imagenes/logoactualizado.png" alt="Logotipo de Mariscal Nieto">
+        <a href="index.html">MOQUEGUA TURÍSTICA</a>
+    </div>
+
+    <nav class="menu">
+        <a href="index.html">Inicio</a>
+        <a href="lugares.html" class="activo">Lugares</a>
+        <a href="galeria.html">Galería</a>
+        <a href="contactos.html">Contactos</a>
+    </nav>
+</header>
+
+    <main class="contenido-principal">
+
+        <section class="introduccion">
+            <h1>Lugares turísticos de Moquegua</h1>
+            <p>
+                Descubre los atractivos turísticos de las provincias
+                de Mariscal Nieto, Ilo y General Sánchez Cerro.
+            </p>
+        </section>
+
+        <section class="filtros">
+            <button class="filtro seleccionado" data-filtro="todos">Todos</button>
+            <button class="filtro" data-filtro="ilo">Ilo</button>
+            <button class="filtro" data-filtro="mariscal">Mariscal Nieto</button>
+            <button class="filtro" data-filtro="sanchez">General Sánchez Cerro</button>
+        </section>
+
+        <p class="contador" id="contador-lugares">Mostrando 9 lugares</p>
+
+        <section class="tarjetas">
+
+            <!-- MARISCAL NIETO -->
+
+            <article class="tarjeta" data-provincia="mariscal">
+                <img src="Imagenes/cerrobaul.jpg" alt="Cerro Baúl">
+                <div class="informacion">
+                    <span class="provincia">Mariscal Nieto</span>
+                    <h2>Cerro Baúl</h2>
+                    <p>
+                        Formación natural ubicada en Torata, reconocida
+                        por su cima plana y su importancia arqueológica.
+                    </p>
+                    <div class="detalle-extra" hidden>
+                        <p>
+                            Fue un importante asentamiento de la cultura
+                            Wari y ofrece una vista panorámica del valle
+                            de Torata y sus alrededores.
+                        </p>
+                        <a href="https://es.wikipedia.org/w/index.php?search=Cerro+Baul+Moquegua"
+                           target="_blank" rel="noopener noreferrer">
+                            Conoce más de Cerro Baúl
+                        </a>
+                    </div>
+                    <button class="boton-detalle" aria-expanded="false">
+                        Ver más
+                    </button>
+                </div>
+            </article>
+
+            <article class="tarjeta" data-provincia="mariscal">
+                <img src="Imagenes/cataratasdemollesaja.jpg" alt="Cataratas de Mollesaja">
+                <div class="informacion">
+                    <span class="provincia">Mariscal Nieto</span>
+                    <h2>Cataratas de Mollesaja</h2>
+                    <p>
+                        Atractivo natural de Torata, conocido por sus
+                        caídas de agua y el paisaje que lo rodea.
+                    </p>
+                    <div class="detalle-extra" hidden>
+                        <p>
+                            Es un lugar apropiado para disfrutar de la
+                            naturaleza y conocer los paisajes rurales
+                            de la provincia de Mariscal Nieto.
+                        </p>
+                        <a href="https://es.wikipedia.org/w/index.php?search=Cataratas+de+Mollesaja"
+                           target="_blank" rel="noopener noreferrer">
+                            Conoce más de Cataratas de Mollesaja
+                        </a>
+                    </div>
+                    <button class="boton-detalle" aria-expanded="false">
+                        Ver más
+                    </button>
+                </div>
+            </article>
+
+            <article class="tarjeta" data-provincia="mariscal">
+                <img src="Imagenes/plazadearmasmoquegua.jpg" alt="Plaza de Armas de Moquegua">
+                <div class="informacion">
+                    <span class="provincia">Mariscal Nieto</span>
+                    <h2>Plaza de Armas de Moquegua</h2>
+                    <p>
+                        Espacio emblemático de la ciudad, rodeado de
+                        arquitectura histórica y lugares tradicionales.
+                    </p>
+                    <div class="detalle-extra" hidden>
+                        <p>
+                            Es uno de los principales puntos de encuentro
+                            de la ciudad y un lugar para apreciar parte
+                            de su historia y patrimonio arquitectónico.
+                        </p>
+                        <a href="https://es.wikipedia.org/w/index.php?search=Plaza+de+Armas+de+Moquegua"
+                           target="_blank" rel="noopener noreferrer">
+                            Conoce más de la Plaza de Armas de Moquegua
+                        </a>
+                    </div>
+                    <button class="boton-detalle" aria-expanded="false">
+                        Ver más
+                    </button>
+                </div>
+            </article>
+
+            <!-- ILO -->
+
+            <article class="tarjeta" data-provincia="ilo">
+                <img src="Imagenes/maleconcosterodeilo.jpg" alt="Malecón Costero de Ilo">
+                <div class="informacion">
+                    <span class="provincia">Ilo</span>
+                    <h2>Malecón Costero de Ilo</h2>
+                    <p>
+                        Paseo junto al litoral donde se puede disfrutar
+                        del paisaje marino y la brisa del océano.
+                    </p>
+                    <div class="detalle-extra" hidden>
+                        <p>
+                            Es una zona representativa de Ilo, ideal
+                            para caminar, contemplar el mar y conocer
+                            el ambiente de esta ciudad portuaria.
+                        </p>
+                        <a href="https://es.wikipedia.org/w/index.php?search=Malecon+Costero+de+Ilo"
+                           target="_blank" rel="noopener noreferrer">
+                            Conoce más del Malecón Costero de Ilo
+                        </a>
+                    </div>
+                    <button class="boton-detalle" aria-expanded="false">
+                        Ver más
+                    </button>
+                </div>
+            </article>
+
+            <article class="tarjeta" data-provincia="ilo">
+                <img src="Imagenes/puntacoles.jpg" alt="Punta Coles">
+                <div class="informacion">
+                    <span class="provincia">Ilo</span>
+                    <h2>Punta Coles</h2>
+                    <p>
+                        Área natural costera reconocida por su fauna
+                        marina y sus paisajes junto al océano.
+                    </p>
+                    <div class="detalle-extra" hidden>
+                        <p>
+                            Forma parte de una reserva nacional y es
+                            conocida por la presencia de lobos marinos,
+                            aves guaneras y otras especies.
+                        </p>
+                        <a href="https://es.wikipedia.org/w/index.php?search=Punta+Coles+Ilo"
+                           target="_blank" rel="noopener noreferrer">
+                            Conoce más de Punta Coles
+                        </a>
+                    </div>
+                    <button class="boton-detalle" aria-expanded="false">
+                        Ver más
+                    </button>
+                </div>
+            </article>
+
+            <article class="tarjeta" data-provincia="ilo">
+                <img src="Imagenes/playaposodelisas.jpg" alt="Playa Pozo de Lisas">
+                <div class="informacion">
+                    <span class="provincia">Ilo</span>
+                    <h2>Playa Pozo de Lisas</h2>
+                    <p>
+                        Una de las playas conocidas de Ilo, visitada
+                        por sus paisajes y espacios de recreación.
+                    </p>
+                    <div class="detalle-extra" hidden>
+                        <p>
+                            Es un destino frecuentado especialmente
+                            durante la temporada de verano y permite
+                            disfrutar del entorno costero de la región.
+                        </p>
+                        <a href="https://es.wikipedia.org/w/index.php?search=Playa+Pozo+de+Lisas"
+                           target="_blank" rel="noopener noreferrer">
+                            Conoce más de Pozo de Lisas
+                        </a>
+                    </div>
+                    <button class="boton-detalle" aria-expanded="false">
+                        Ver más
+                    </button>
+                </div>
+            </article>
+
+            <!-- GENERAL SÁNCHEZ CERRO -->
+
+            <article class="tarjeta" data-provincia="sanchez">
+                <img src="Imagenes/valledeomate.jpg" alt="Valle de Omate">
+                <div class="informacion">
+                    <span class="provincia">General Sánchez Cerro</span>
+                    <h2>Valle de Omate</h2>
+                    <p>
+                        Valle conocido por sus paisajes, clima agradable
+                        y producción agrícola.
+                    </p>
+                    <div class="detalle-extra" hidden>
+                        <p>
+                            Omate es la capital de la provincia de
+                            General Sánchez Cerro y destaca por sus
+                            cultivos, tradiciones y entorno natural.
+                        </p>
+                        <a href="https://es.wikipedia.org/wiki/Omate"
+                           target="_blank" rel="noopener noreferrer">
+                            Conoce más de Omate
+                        </a>
+                    </div>
+                    <button class="boton-detalle" aria-expanded="false">
+                        Ver más
+                    </button>
+                </div>
+            </article>
+
+            <article class="tarjeta" data-provincia="sanchez">
+                <img src="Imagenes/bañostermalesdecoalaque.jpg" alt="Baños termales de Coalaque">
+                <div class="informacion">
+                    <span class="provincia">General Sánchez Cerro</span>
+                    <h2>Baños termales de Coalaque</h2>
+                    <p>
+                        Aguas termales ubicadas en el distrito de
+                        Coalaque, rodeadas de un entorno natural.
+                    </p>
+                    <div class="detalle-extra" hidden>
+                        <p>
+                            Este atractivo permite conocer una de las
+                            opciones de turismo natural y descanso
+                            que ofrece la provincia.
+                        </p>
+                        <a href="https://es.wikipedia.org/w/index.php?search=Coalaque+Moquegua+aguas+termales"
+                           target="_blank" rel="noopener noreferrer">
+                            Conoce más de los Baños termales de Coalaque
+                        </a>
+                    </div>
+                    <button class="boton-detalle" aria-expanded="false">
+                        Ver más
+                    </button>
+                </div>
+            </article>
+
+            <article class="tarjeta" data-provincia="sanchez">
+                <img src="Imagenes/cataratadelchorro.jpg" alt="Catarata del Chorro">
+                <div class="informacion">
+                    <span class="provincia">General Sánchez Cerro</span>
+                    <h2>Catarata del Chorro</h2>
+                    <p>
+                        Atractivo natural ubicado en Quinistaquillas,
+                        caracterizado por su caída de agua.
+                    </p>
+                    <div class="detalle-extra" hidden>
+                        <p>
+                            Su paisaje permite apreciar la riqueza
+                            natural de esta parte de Moquegua y
+                            disfrutar de un ambiente tranquilo.
+                        </p>
+                        <a href="https://es.wikipedia.org/w/index.php?search=Catarata+del+Chorro+Quinistaquillas"
+                           target="_blank" rel="noopener noreferrer">
+                            Conoce más de la Catarata del Chorro
+                        </a>
+                    </div>
+                    <button class="boton-detalle" aria-expanded="false">
+                        Ver más
+                    </button>
+                </div>
+            </article>
+
+        </section>
+    </main>
+
+    <footer class="pie-pagina">
+        <p>© 2026 Moquegua Turística | Todos los derechos reservados</p>
+    </footer>
+
+</body>
+</html>
